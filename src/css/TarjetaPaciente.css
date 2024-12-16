@@ -1,0 +1,88 @@
+.card-wrapper {
+    margin: 25px;
+    background-color: #3e4148;
+    width: 95%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.button-show-data {
+    width: 10%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.data-container {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.data-container.visible {
+    max-height: 100%;
+    opacity: 1;
+}
+
+.list-data {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0.3s;
+}
+
+.data-container.visible .list-data {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.list-data li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.text-profile-picture {
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0.6s;
+}
+
+.data-container.visible .text-profile-picture {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.foto-perfil {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: 0.9s;
+}
+
+.data-container.visible .foto-perfil {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.foto-perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

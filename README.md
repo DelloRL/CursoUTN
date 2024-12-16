@@ -4,6 +4,6 @@ En grupo junto con: Federico De Brito
 
 Para iniciar la aplicación, usar:
 
-# npm install
+npm install
 
-# npm start
+npm start
